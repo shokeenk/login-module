@@ -64,7 +64,7 @@ public class SecurityConfig {
         cors.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         cors.setAllowedHeaders(Arrays.asList("*"));
         cors.setExposedHeaders(Arrays.asList("Set-Cookie"));
-        cors.setAllowCredentials(true);  // 🔥 important for cookies
+        cors.setAllowCredentials(true); 
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", cors);
